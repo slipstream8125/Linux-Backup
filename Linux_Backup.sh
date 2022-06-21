@@ -12,7 +12,6 @@ sudo apt update
 sudo apt install librewolf -y
 sudo apt install discord -y
 flatpak install flathub com.visualstudio.code-oss -y
-
 sudo apt install codeblocks codeblocks-contrib
 sudo apt install virtualbox -y
 wget http://packages.linuxmint.com/pool/main/w/webapp-manager/webapp-manager_1.1.9_all.deb
