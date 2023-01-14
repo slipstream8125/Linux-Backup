@@ -4,7 +4,7 @@ A .sh script which stores some apt commands for quick app installs
 # Tasks done using this script
 
 1. Update the packages installed in the system
-2. Installs the following packages
+2. Installs the following packages\n
     a. Gnome Tweaks
     b. Neofetch
     c. BetterDiscord
