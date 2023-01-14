@@ -1,16 +1,25 @@
+#Updates the packages installed in the system
 sudo apt-get upgrade -y
-sudo apt-get install gnome-tweaks -y
-sudo apt install conky-all -y
-sudo apt install neofetch -y
-curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
-chmod +x betterdiscordctl
-sudo  mv betterdiscordctl /usr/local/bin
-sudo betterdiscordctl self-upgrade
+sudo apt-get install gnome-tweaks -y #Installs gnome-tweaks
+
+sudo apt install conky-all -y #Installs conky
+sudo apt install neofetch -y #installs neofetch
+#Installs discord
+sudo apt install discord -y
+echo "Do you want to install betterdiscordctl?"
+read inp;
+if [[ "$inp" == "y" ]]||[[ "$inp" == "Y"]];then
+  curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
+  chmod +x betterdiscordctl
+  sudo  mv betterdiscordctl /usr/local/bin
+  sudo betterdiscordctl self-upgrade
+  betterdiscordctl -i traditional install
+fi
+echo "Installing Librewolf : \n"
 echo "deb [arch=amd64] http://deb.librewolf.net $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/librewolf.list
 sudo wget https://deb.librewolf.net/keyring.gpg -O /etc/apt/trusted.gpg.d/librewolf.gpg
 sudo apt update
 sudo apt install librewolf -y
-sudo apt install discord -y
 flatpak install flathub com.visualstudio.code-oss -y
 sudo apt install codeblocks codeblocks-contrib
 sudo apt install virtualbox -y
