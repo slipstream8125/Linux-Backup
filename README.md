@@ -1,5 +1,5 @@
 # Linux_backup
-A .sh script which stores some apt commands for quick app installs
+A .sh script which stores some apt commands for quick app installs for my personal use
 
 # Tasks done using this script
 
