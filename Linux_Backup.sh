@@ -1,6 +1,7 @@
 #Updates the packages installed in the system
+timedatectl set-local-rtc 1 --adjust-system-clock
 sudo apt-get upgrade -y
-sudo apt-get install gnome-tweaks conky-all discord librewolf -y  #Installs gnome-tweaks
+sudo apt-get install gnome-tweaks conky-all discord librewolf codeblocks codeblocks-contrib  #Installs gnome-tweaks
 
 sudo apt install conky-all -y #Installs conky
 sudo apt install neofetch -y #installs neofetch
